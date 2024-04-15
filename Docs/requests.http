@@ -1,0 +1,74 @@
+POST https://localhost:7218/usuario/
+Content-Type: application/json
+
+{
+  "Email": "ze@gmail.com",
+  "Site": "Cbarato",
+  "Cidade": "Rio de Janeiro",
+  "Nome": "Ze",
+  "Senha": "123456"
+}
+
+###
+
+POST https://localhost:7218/usuario/
+Content-Type: application/json
+
+{
+  "Email": "maria@gmail.com",
+  "Site": "Cbarato",
+  "Cidade": "Rio de Janeiro",
+  "Nome": "Maria",
+  "Senha": "123456"
+}
+
+###
+
+POST https://localhost:7218/usuario/
+Content-Type: application/json
+
+{
+  "Email": "camila@gmail.com",
+  "Site": "Kabum",
+  "Cidade": "Rio de Janeiro",
+  "Nome": "Camila",
+  "Senha": "123456"
+}
+
+###
+
+GET https://localhost:7218/usuario/
+Content-Type: application/json
+Site:Cbarato
+
+###
+
+GET https://localhost:7218/usuario/
+Content-Type: application/json
+Site:Kabum
+
+###
+
+GET https://localhost:7218/usuario/martins@gmail.com
+Content-Type: application/json
+Site:Cbarato
+
+###
+
+PUT https://localhost:7218/usuario/
+Content-Type: application/json
+Site:Kabum
+
+{
+  "Email": "martins2@gmail.com",
+  "Site": "Cbarato",
+  "Cidade": "Rio de Janeiro",
+  "Nome": "Batman",
+  "Senha": "123456"
+}
+
+###
+
+DELETE https://localhost:7218/usuario/martins2@gmail.com
+Content-Type: application/json
+Site:Cbarato
